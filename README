@@ -1,0 +1,19 @@
+README for Raptcache
+==================
+
+Raptcache is a gem providing a ruby interface to the apt-cache APT package
+cache manipulator.
+
+To install, type 'gem install raptcache'
+
+Usage:
+
+  require 'raptcache'
+
+  packages = Array.new
+  packages.push('iagno')
+  packages.push('gnome-games')
+
+  aptcache = Raptcache.new
+  aptcache.rdepends(packages)
+
